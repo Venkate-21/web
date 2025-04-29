@@ -1,97 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Course UI</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 20px;
+            width: 1000px;
+            margin-top: 20px;
+            margin-left: 10px;
+            background-color: grey;
+        }
+        .new{
+            display: flex;
+            height: 30px;
+            width: 230px;
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .line{
+            display: flex;
+            height: 60px;
+            width: 20px;
+            margin-left: 230px;
+            margin-top: -35px;
+        }
+        .ven{
+            display: flex;
+            height: 30px;
+            width: 330px;
+            margin-top: -82px;
+            margin-left: 280px;
+            font-size: 20px;
+        }
+        .euro{
+            display: flex;
+            height: 50px;
+            width: 30px;
+            margin-top: -45px;
+            margin-left: 740px;
+        }
+        .date{
+            display: flex;
+            height: 30px;
+            width: 300px;
+            margin-left: 794px;
+            margin-top: -63px;
+            font-size: 20px;
+        }
+        .symbol{
+            display: flex;
+            height: 30px;
+            width: 60px;
+            margin-top: -45px;
+            margin-left: 986px;
+        }
+        .border{
+            display: flex;
+            height: 20px;
+            width: 1000px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: grey;
+        }
+        .lines{
+            display: flex;
+            height: 800px;
+            width: 20px;
+            margin-top: -1px;
+            margin-left: 300px;
+            background-color: grey;
+        }
+        .fil{
+            display: flex;
+            height: 30px;
+            width: 100px;
+            margin-top: -780px;
+            margin-left: 20px;
+        }
+        .reset{
+            display: flex;
+            height: 30px;
+            width: 100px;
+            margin-top: -46px;
+            margin-left: 190px;
+            color: red;
+        }
+        .q{
+            display: flex;
+            height: 30px;
+            width: 100px;
+            margin-top: -3px;
+            margin-left: 20px;
+        }
+        .g{
+            display: flex;
+            height: 30px;
+            width: 100px;
+            margin-left: 28px;
+            margin-top: -20px;
+        }
+        .lady{
+            display: flex;
+            height: 30px;
+            width: 300px;
+            margin-top: -56px;
+            margin-left: 160px;
+        }
+        .nd{
+            display: flex;
+            margin-left: 100px;
+            margin-top: -10px;
+        }
+        .lady{
+            display: flex;
+            margin-left: 1px;
+            margin-top: -1px;
+        }
+        .lower{
+            display: flex;
+            margin-left: 100px;
+            margin-top: -50px;
+        }
+        .tat{
+            display: flex;
+            margin-top: -60px;
+        }
+        .N{
+            display: flex;
+        }
+        .L{
+            display: flex;
+            margin-top: -50px;
+            margin-left: 100px;
+        }
+        .EE{
+            display: flex;
+            margin-top: -10px;
+            margin-left: 1px;
+        }
+        .ZM{
+            display: flex;
+            margin-top: -50px;
+            margin-left: 100px;
+        }
+        .DI{
+            display: flex;
+            margin-left: 1px;
+            margin-top: -10px;
+        }
+        .sta{
+            display: flex;
+            height: 30px;
+            width: 200px;
+            margin-left: 1px;
+            margin-top: 20px;
+        }
+        .ct{
+            display: flex;
+            margin-left: 1px;
+            margin-top: -23px;
+        }
+        .mt{
+            display: flex;
+            margin-left: 200px;
+            margin-top: -50px;
+        }
+        .vl{
+            display: flex;
+            margin-left: 1px;
+            margin-top: -5px;
+        }
+        .bd{
+            display: flex;
+            margin-left: 200px;
+            margin-top: -50px;
+        }
+        .sort{
+            display: flex;
+            margin-left: 330px;
+            margin-top: -490px;
+        }
+        .dep{
+            display: flex;
+            margin-left: 500px;
+            margin-top: -34px;
+            color: red;
+        }
+        .due{
+            display: flex;
+            margin-left: 680px;
+            margin-top: -34px;
+        }
+        .arr{
+            display: flex;
+            margin-left: 850px;
+            margin-top: -34px;
+        }
+        .li{
+            display: flex;
+            height: 20px;
+            width: 730px;
+            margin-top: 40px;
+            margin-left: 300px;
+            background-color: grey;
+        }
+    </style>
 </head>
 <body>
-  <div class="app">
-    <section class="screen course-details">
-      <div class="top">← Course Details</div>
-      <img class=C:\Users\venga\Documents\venkatesh\day9\img2.jpg src=C:\Users\venga\Documents\venkatesh\day9\img2.jpg alt=C:\Users\venga\Documents\venkatesh\day9\img2.jpg />
-      <div class="course">UI UX Design For Beginner</div>
-      <div class="mentor">
-        <img src=C:\Users\venga\Documents\venkatesh\day9\img3.jpg alt="mentor"/>
-        <span>Noa<br/><small>UI UX Design Mentor</small></span>
-      </div>
-      <div class="tabs">
-        <span class="active">Details</span>
-        <span>Lessons</span>
-        <span>Reviews</span>
-      </div>
-      <hr class="underline" />
-      <div class="learn">What You’ll Learn</div>
-      <ul class="list">
-        <li><b>Introduction to User Research</b></li>
-        <li>Elements of UX</li>
-        <li>Role of research in the UX design process</li>
-        <li>Overview of research methods</li>
-        <li>Introduction to heuristic testing</li>
-        <li>Reading user personas and empathy maps</li>
-        <li><b>Fundamentals of UX Design</b></li>
-        <li>Information architecture and sitemaps</li>
-        <li>User journey maps</li>
-        <li>Understanding navigation</li>
-        <li>Interaction design: task flows</li>
-        <li>Overview of grids & page types</li>
-        <li>Developing low/high fidelity wireframes</li>
-      </ul>
-      <nav class="nav-bar">
-        <span>🏠 Home</span>
-        <span class="active">📚 Courses</span>
-        <span>🎟️ Events</span>
-        <span>💬 Chat</span>
-        <span>👤 Profile</span>
-      </nav>
-    </section>
-    <section class="screen my-courses">
-      <div class="top-bar">← My Courses</div>
-      <div class="section-title">Progress lesson</div>
-      <div class="course-card active">
-        <div>
-          <div class="title">UI UX Design For Beginner</div>
-          <div class="mentor-row">
-            <img src=C:\Users\venga\Documents\venkatesh\day9\img1.jpg />
-            <span>Noa<br/><small>UI UX Design Mentor</small></span>
-          </div>
-          <div class="course-info">
-            <span>📄 07/25 Progress</span>
-            <span>⏱️ 5h, 30 mins</span>
-          </div>
+    <div class="container"></div>
+    <h1 class="new">NEW DELHI(NDLS) </h1>
+        <p class="line">→</p>
+        <h1 class="ven">MUMBAI CENTRAL(MMCT)</h1>
+        <p class="euro">＜</p>
+        <h1 class="date">Tue, 29 Apr 2025</h1>
+        <p class="symbol">＞</p>
+        <div class="border"></div>
+        <div class="lines"></div>
+        <p class="fil">FILTRES</p>
+        <p class="reset">RESET ALL</p>
+        <p class="q">quota</p>
+        <div class="nd">
+            <input type="radio">
+            <p>General</p>
         </div>
-        <span class="menu">⋮</span>
-      </div>
-      <div class="course-card">
-        <div>
-          <div class="title">Graphic Design</div>
-          <div class="mentor-row">
-            <img src=C:\Users\venga\Documents\venkatesh\day9\img3.jpg />
-            <span>May<br/><small>Graphic Design Mentor</small></span>
-          </div>
-          <div class="course-info">
-            <span>📄 12/25 Progress</span>
-            <span>⏱️ 7h, 30 mins</span>
-          </div>
+        <div  class="tat">
+            <input type="radio">
+            <p>Tatkal</p>
         </div>
-        <span class="menu">⋮</span>
-      </div>
-      <div class="section-title">Recent lesson</div>
-      <div class="lesson-list">
-        <div class="lesson"><span>01</span> Introduction <small>UI UX Design For Beginner</small> <button>▶</button></div>
-        <div class="lesson"><span>02</span> What is UI UX <small>UI UX Design For Beginner</small> <button>▶</button></div>
-        <div class="lesson"><span>03</span> Design Principles <small>UI UX Design For Beginner</small> <button>▶</button></div>
-      </div>
-      <nav class="nav-bar">
-        <span>🏠 Home</span>
-        <span class="active">📚 Courses</span>
-        <span>🎟️ Events</span>
-        <span>💬 Chat</span>
-        <span>👤 Profile</span>
-      </nav>
-    </section>
-  </div>
+        <div class="lady">
+            <input type="radio">
+            <p>Ladies</p>
+        </div>
+        <div class="lower">
+            <input type="radio">
+            <p>senior<br>Citizen/Lowerberth</p>
+        </div>
+        <p class="o">Origin Station</p>
+        <div class="N">
+            <input type="checkbox">
+            <p>NZM</p>
+        </div>
+        <div class="L">
+            <input type="checkbox">
+            <p>NDLS</p>
+        </div>
+        <div class="EE">
+            <input type="checkbox">
+            <p>DEE</p>
+        </div>
+        <div class="ZM">
+            <input type="checkbox">
+            <p>SZM</p>
+        </div>
+        <div class="DI">
+            <input type="checkbox">
+            <p>ANDI</p>
+        </div>
+        <p class="sta">Destination Station</p>
+        <div class="ct">
+            <input type="checkbox">
+            <p>MMCT</p>
+        </div>
+        <div class="mt">
+            <input type="checkbox">
+            <p>CSMT</p>
+        </div>
+        <div class="vl">
+            <input type="checkbox">
+            <p>PNVL</p>
+        </div>
+        <div class="bd">
+            <input type="checkbox">
+            <p>BDTS</p>
+        </div>
+        <p class="sort">Sort by:</p>
+        <p class="dep">Departure</p>
+        <p class="due">Duration</p>
+        <p class="arr">Arrival</p>
+        <div class="li"></div>
 </body>
 </html>
-
